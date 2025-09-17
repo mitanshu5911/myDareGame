@@ -31,7 +31,7 @@ export default function Home({ onStart }) {
       <motion.h1
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.8 }}
         className="text-4xl md:text-5xl font-bold text-rose-600 drop-shadow-lg mb-2"
       >
         Enjoy Night
@@ -44,10 +44,10 @@ export default function Home({ onStart }) {
         <motion.div
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.4, duration:0.8 }}
           className="relative"
         >
-          <User className="absolute left-4 top-1/2 -translate-y-1/2 text-rose-400" />
+          <User className="absolute left-4 top-1/2 -translate-y-1/2 text-rose-400 z-10" />
           <input
             type="text"
             placeholder="Enter Male Name"
@@ -61,10 +61,10 @@ export default function Home({ onStart }) {
         <motion.div
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.4 , duration:0.8}}
           className="relative"
         >
-          <Heart className="absolute left-4 top-1/2 -translate-y-1/2 text-rose-400" />
+          <Heart className="absolute left-4 top-1/2 -translate-y-1/2 text-rose-400 z-10" />
           <input
             type="text"
             placeholder="Enter Female Name"
@@ -88,7 +88,7 @@ export default function Home({ onStart }) {
 
         <motion.button
           whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+          whileTap={{ scale: 0.9}}
           onClick={() => handleStart("random")}
           className="px-8 py-4 rounded-2xl bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold shadow-lg"
         >

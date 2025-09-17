@@ -104,7 +104,7 @@ export default function useGame({ maleName, femaleName, mode: initialMode }) {
   // Previous card
   const prev = useCallback(() => {
     if (position > 0) {
-      setPosition((p) => p - 1);
+      setPosition((p) =>  - 1);
       setActivePlayer((a) => 1 - a);
     } else if (mode === "level" && currentLevel > 1) {
       const prevLevel = currentLevel - 1;
